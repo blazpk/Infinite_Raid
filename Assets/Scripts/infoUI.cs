@@ -26,5 +26,5 @@ public class infoUI : MonoBehaviour
     {
         //UIbg.SetActive(true);
     }
-
+    
 }

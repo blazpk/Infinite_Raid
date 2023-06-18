@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-[RequireComponent(typeof(TMP_Text))]
 public class heroSelect : MonoBehaviour
 {
     [SerializeField]
@@ -20,15 +19,18 @@ public class heroSelect : MonoBehaviour
 
     private Gold gold;
     private infoUI info;
+    private playAtk dmg;
 
     public GameObject heroInfoUi;
 
     private void Start()
     {
         mainCamera = Camera.main;
+        dmg = transform.gameObject.GetComponent<playAtk>();
         info = FindObjectOfType<infoUI>();
         gold = FindObjectOfType<Gold>();
         heroInfoUi.SetActive(false);
+
     }
 
     private void OnMouseDown()
@@ -36,11 +38,13 @@ public class heroSelect : MonoBehaviour
         Vector3 mousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         oldPosition = mousePosition;
         oldParent = transform.parent;
+
+        // hien infoUI
         info.ui.SetActive(true);
         info.uiPanel.SetActive(true);
-        playAtk dmg = transform.gameObject.GetComponent<playAtk>();
         Debug.Log(dmg.damage);
-        info.dmgValueText.text = dmg.damage.ToString();
+        UpgradeDmg();
+        dmg.onDmgChanged += UpgradeDmg;
 
         heroInfoUi.SetActive(true);
 
@@ -57,6 +61,11 @@ public class heroSelect : MonoBehaviour
                 heroes[i].heroInfoUi.SetActive(false);
             }
         }
+    }
+
+    private void UpgradeDmg()
+    {
+        info.dmgValueText.text = dmg.damageValue.ToString();
     }
 
     private void OnMouseDrag()

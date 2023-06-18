@@ -6,7 +6,7 @@ public class monsterMovement : MonoBehaviour
 {
     public float moveSpeed = 0.2f;
     Rigidbody2D rb;
-    public int enemyDamage;
+    //public int enemyDamage;
 
     private Vector2 direction;
 
@@ -41,7 +41,7 @@ public class monsterMovement : MonoBehaviour
             WallHealth wall = collision.gameObject.GetComponent<WallHealth>();
             if (wall != null)
             {
-                wall.TakeDamage(enemyDamage);
+                wall.TakeDamage(enemy.enemyDamage);
             }
         }
     }

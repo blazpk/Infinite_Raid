@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
     public void updateEnemyDieCount()
     {
         enemyDieCount ++;
-        if (enemyDieCount >= spawned.totalEnemies)
+        if (enemyDieCount >= spawned.totalEnemies && hp.wallHealth > 0)
         {
             winPanel.SetActive(true);
         }
@@ -45,5 +45,4 @@ public class GameManager : MonoBehaviour
     {
         return enemyDieCount;
     }
-
 }

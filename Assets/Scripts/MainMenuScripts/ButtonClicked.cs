@@ -5,13 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class ButtonClicked : MonoBehaviour
 {
-    public void RetryButton()
+    public void RetryButton(string levelName)
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene(levelName);
+        Time.timeScale = 1;
     }
 
     public void MainMenuButton()
     {
         SceneManager.LoadScene("MainMenuScene");
+        Time.timeScale = 1;
     }
 }

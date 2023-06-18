@@ -23,27 +23,40 @@ public class playAtk : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    //void Update()
+    //{
+
+    //    if (Input.GetMouseButtonDown(0))
+    //    {
+    //        //anim.SetBool("isAtking", true);
+    //        //Debug.Log("Left Mouse Button Down");
+    //        //Atk();
+    //    }
+    //    else if (Input.GetMouseButton(1)) {
+    //        //anim.SetBool("isAtking", true);
+    //        //Atk();
+    //    }
+    //    else
+    //    {
+    //        //anim.SetBool("isAtking", false);
+    //    }
+
+    //}
+
+    public int damageValue
     {
-
-        if (Input.GetMouseButtonDown(0))
+        get => damage;
+        private set
         {
-            //anim.SetBool("isAtking", true);
-            //Debug.Log("Left Mouse Button Down");
-            //Atk();
-        }
-        else if (Input.GetMouseButton(1)) {
-            //anim.SetBool("isAtking", true);
-            //Atk();
-        }
-        else
-        {
-            //anim.SetBool("isAtking", false);
-        }
-
+            damage = value;
+            onDmgChanged?.Invoke();
+}
     }
 
+    public System.Action onDmgChanged;
+
     void Atk() {
+        anim.SetTrigger("isAtk");
         var bullet = Instantiate(bulletPrefab, this.transform.position, this.transform.rotation);
     }
 
@@ -66,18 +79,13 @@ public class playAtk : MonoBehaviour
     {
         if (IsEnemyOnLane() == true) 
         {
-            anim.SetBool("isAtking", true);
             Atk();
-        }
-        else
-        {
-            anim.SetBool("isAtking", false);
         }
     }
 
     public void upgrade()
     {
-        damage += upgradeDmg;
+        damageValue += upgradeDmg;
         gold.SpendGold(upgradeCost);
     }
 }

@@ -9,10 +9,14 @@ public class WallHPText : MonoBehaviour
     public TMP_Text hpText;
     public WallHealth wallHP;
 
+    public GameObject losePanel;
+
     private void Start()
     {
         UpdateHP();
         wallHP.onHPChanged += UpdateHP;
+
+        losePanel.SetActive(false);
     }
 
     void UpdateHP()
@@ -21,6 +25,9 @@ public class WallHPText : MonoBehaviour
         if (wallHP.wallHealth <= 0)
         {
             hpText.text = "YOU LOSE";
+
+            losePanel.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 

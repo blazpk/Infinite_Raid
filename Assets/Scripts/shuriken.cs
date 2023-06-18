@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class weaponStat : MonoBehaviour
+public class shuriken : MonoBehaviour
 {
     //public int damage;
     private playAtk damage;
