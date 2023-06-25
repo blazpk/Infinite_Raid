@@ -42,7 +42,7 @@ public class monsterMovement : MonoBehaviour
             if (slowTime <= 0)
             {
                 isSlow = false;
-                sprite.color = new Color(255, 255, 255, 255);
+                sprite.color = Color.white;
             }
         }
     }
@@ -74,7 +74,9 @@ public class monsterMovement : MonoBehaviour
         {
             moveSpeed = moveSpeed * (1f - percent);
             slowTime = duration;
-            sprite.color = new Color(56, 204, 233, 255);
+            //sprite.color = new Color(56, 204, 233, 255);
+            sprite.color = (Color)(new Color32(56, 204, 233, 255));
+            //sprite.color = Color.blue;
             isSlow = true;
         }
         else
