@@ -27,7 +27,7 @@ public class spawnEnemy : MonoBehaviour
         {
             Instantiate(enemyPrefabs[enemyIndex], spawnPos[posIndex].transform.position, transform.rotation);
             enemiesSpawned++;
-            //Debug.Log("enemies spawned: " + enemiesSpawned);
+            Debug.Log("enemies spawned: " + enemiesSpawned);
         }
         else
         {

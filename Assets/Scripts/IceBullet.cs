@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class shuriken : MonoBehaviour
+public class IceBullet : MonoBehaviour
 {
-    //public int damage;
+    public float slowPercent;
+    public float slowDuration;
+
     private playAtk damage;
 
     Rigidbody2D rb;
@@ -14,15 +16,6 @@ public class shuriken : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         damage = FindObjectOfType<playAtk>();
     }
-
-    //private void DeliveryDamage(RaycastHit2D hitInfo)
-    //{
-    //    var health = hitInfo.collider.GetComponent<enemyStat>();
-    //    if (health != null) 
-    //    {
-    //        health.TakeDamage(damage);
-    //    }
-    //}
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -37,11 +30,13 @@ public class shuriken : MonoBehaviour
             {
                 enemy.TakeDamage(damage.damage);
             }
+
+            monsterMovement enemyMove = collision.gameObject.GetComponent<monsterMovement>();
+
+            if (enemy != null)
+            {
+                enemyMove.SlowEffect(slowPercent, slowDuration);
+            }
         }
     }
-
-    //public int getDamage()
-    //{
-    //    return damage;
-    //}
 }

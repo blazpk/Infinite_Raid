@@ -13,18 +13,19 @@ public class magicShuriken : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         damage = FindObjectOfType<playAtk>();
+        Destroy(gameObject, 3);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
         {
             //Debug.Log("bullet hit enemy");
-            Destroy(gameObject);
+            //Destroy(gameObject);
 
             enemyStat enemy = collision.gameObject.GetComponent<enemyStat>();
 
-            if (enemy != null) 
+            if (enemy != null)
             {
                 enemy.TakeDamage(damage.damage);
             }

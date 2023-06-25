@@ -561,6 +561,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8667177554632030811, guid: 31895bc267c85a148920ed1a04412346, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667177554632030811, guid: 31895bc267c85a148920ed1a04412346, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1872116919}
+    - target: {fileID: 8667177554632030811, guid: 31895bc267c85a148920ed1a04412346, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Select
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667177554632030811, guid: 31895bc267c85a148920ed1a04412346, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelSelector, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667177554632030811, guid: 31895bc267c85a148920ed1a04412346, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Level03
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667177554632030811, guid: 31895bc267c85a148920ed1a04412346, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8667177555369448644, guid: 31895bc267c85a148920ed1a04412346, type: 3}
       propertyPath: m_text
       value: 3
@@ -893,6 +917,30 @@ PrefabInstance:
     - target: {fileID: 8667177554632030810, guid: 31895bc267c85a148920ed1a04412346, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667177554632030811, guid: 31895bc267c85a148920ed1a04412346, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667177554632030811, guid: 31895bc267c85a148920ed1a04412346, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1872116919}
+    - target: {fileID: 8667177554632030811, guid: 31895bc267c85a148920ed1a04412346, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Select
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667177554632030811, guid: 31895bc267c85a148920ed1a04412346, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelSelector, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667177554632030811, guid: 31895bc267c85a148920ed1a04412346, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Level10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667177554632030811, guid: 31895bc267c85a148920ed1a04412346, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8667177555369448644, guid: 31895bc267c85a148920ed1a04412346, type: 3}
       propertyPath: m_text
