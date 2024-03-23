@@ -243,7 +243,7 @@ TextureImporter:
       213: 4327012316565855419
     second: DialogueBoxSimple_79
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -260,10 +260,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -302,6 +304,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -313,6 +317,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -325,6 +330,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -337,6 +343,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -2032,9 +2052,89 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      DialogueBoxSimple_0: -5256508804588260846
+      DialogueBoxSimple_1: -2192418986828406519
+      DialogueBoxSimple_10: 123225029096142800
+      DialogueBoxSimple_11: 923295074051677736
+      DialogueBoxSimple_12: 2112810082024568673
+      DialogueBoxSimple_13: -1453983860498725696
+      DialogueBoxSimple_14: 8191387670822352678
+      DialogueBoxSimple_15: -6217749589770391947
+      DialogueBoxSimple_16: 3792788578636970739
+      DialogueBoxSimple_17: -8088084026121526456
+      DialogueBoxSimple_18: 8072883418920828328
+      DialogueBoxSimple_19: 7852345940733165434
+      DialogueBoxSimple_2: -961799941193449390
+      DialogueBoxSimple_20: 6849491241598299176
+      DialogueBoxSimple_21: -8430248717142484397
+      DialogueBoxSimple_22: 8240940169910056341
+      DialogueBoxSimple_23: 5503857279507823250
+      DialogueBoxSimple_24: 2384880795870846637
+      DialogueBoxSimple_25: 4465996303599372583
+      DialogueBoxSimple_26: 4171005890288904059
+      DialogueBoxSimple_27: -2208433037331424674
+      DialogueBoxSimple_28: -5657527989570061537
+      DialogueBoxSimple_29: -8401242375222115861
+      DialogueBoxSimple_3: -2314123167978381843
+      DialogueBoxSimple_30: -4523894482912362243
+      DialogueBoxSimple_31: 9028902004636624662
+      DialogueBoxSimple_32: 4537683165640622142
+      DialogueBoxSimple_33: 4448357417654879190
+      DialogueBoxSimple_34: 6739021555412980310
+      DialogueBoxSimple_35: -2650245243478824086
+      DialogueBoxSimple_36: -1287930574985166959
+      DialogueBoxSimple_37: 7399633456325613930
+      DialogueBoxSimple_38: 3146010678387322055
+      DialogueBoxSimple_39: -1679018808290080096
+      DialogueBoxSimple_4: 2077425275678534683
+      DialogueBoxSimple_40: 8254513477818022445
+      DialogueBoxSimple_41: 8298935828240083776
+      DialogueBoxSimple_42: -3155440171871188449
+      DialogueBoxSimple_43: 2078583780822603317
+      DialogueBoxSimple_44: -4524359933861632237
+      DialogueBoxSimple_45: 2525434502152618418
+      DialogueBoxSimple_46: 264510573078108604
+      DialogueBoxSimple_47: 546229324616289331
+      DialogueBoxSimple_48: 8322378699901998029
+      DialogueBoxSimple_49: -242042037469211590
+      DialogueBoxSimple_5: -5750401452516262465
+      DialogueBoxSimple_50: -2964668441709636658
+      DialogueBoxSimple_51: -3134962742259751330
+      DialogueBoxSimple_52: -4326916055191184581
+      DialogueBoxSimple_53: -7957574432548996243
+      DialogueBoxSimple_54: 5244374727091130661
+      DialogueBoxSimple_55: -2492964937146686953
+      DialogueBoxSimple_56: 2993071782614003056
+      DialogueBoxSimple_57: 245347407019041829
+      DialogueBoxSimple_58: 8238682199111298912
+      DialogueBoxSimple_59: -8175923773306081689
+      DialogueBoxSimple_6: -1324348049845271843
+      DialogueBoxSimple_60: -4209821433838989592
+      DialogueBoxSimple_61: 982582720244228067
+      DialogueBoxSimple_62: 378035314161837840
+      DialogueBoxSimple_63: 6932409183630258347
+      DialogueBoxSimple_64: -559866617361977738
+      DialogueBoxSimple_65: 1409397626849521173
+      DialogueBoxSimple_66: -4394921400164360142
+      DialogueBoxSimple_67: -5308661450123680507
+      DialogueBoxSimple_68: -6169710061276259089
+      DialogueBoxSimple_69: 1902195503553673497
+      DialogueBoxSimple_7: 6228315230655430084
+      DialogueBoxSimple_70: -433230659858448631
+      DialogueBoxSimple_71: 4596743383931527078
+      DialogueBoxSimple_72: -6640363461604218407
+      DialogueBoxSimple_73: -8335272681610950149
+      DialogueBoxSimple_74: 9217130763796912888
+      DialogueBoxSimple_75: 5566211742422029491
+      DialogueBoxSimple_76: 4818168050724571306
+      DialogueBoxSimple_77: 5482646307597191875
+      DialogueBoxSimple_78: 6409270100700828903
+      DialogueBoxSimple_79: 4327012316565855419
+      DialogueBoxSimple_8: -1136749984548502804
+      DialogueBoxSimple_9: -7382993109442820300
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

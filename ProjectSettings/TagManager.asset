@@ -7,6 +7,9 @@ TagManager:
   - Enemy
   - Bullet
   - Wall
+  - Boss
+  - HeroSelect
+  - Shield
   layers:
   - Default
   - TransparentFX
@@ -17,7 +20,7 @@ TagManager:
   - zone
   - hero
   - destroyZone
-  - 
+  - coin
   - 
   - 
   - 

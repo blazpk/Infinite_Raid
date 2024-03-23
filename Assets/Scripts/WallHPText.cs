@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-[RequireComponent(typeof(TMP_Text))]
 public class WallHPText : MonoBehaviour
 {
     public TMP_Text hpText;
-    public WallHealth wallHP;
+    public Health wallHP;
 
     public GameObject losePanel;
 
@@ -15,14 +14,12 @@ public class WallHPText : MonoBehaviour
     {
         UpdateHP();
         wallHP.onHPChanged += UpdateHP;
-
-        losePanel.SetActive(false);
     }
 
     void UpdateHP()
     { 
-        hpText.text = wallHP.wallHealth.ToString();
-        if (wallHP.wallHealth <= 0)
+        hpText.text = wallHP.HP.ToString();
+        if (wallHP.HP <= 0)
         {
             hpText.text = "YOU LOSE";
 
@@ -31,5 +28,5 @@ public class WallHPText : MonoBehaviour
         }
     }
 
-    private void OnValidate() => hpText = GetComponent<TMP_Text>();
+    //private void OnValidate() => hpText = GetComponent<TMP_Text>();
 }

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-[RequireComponent(typeof(TMP_Text))]
 public class GoldValue : MonoBehaviour
 {
     public TMP_Text goldText;
@@ -23,6 +22,4 @@ public class GoldValue : MonoBehaviour
             //goldText.text = "0";
         }
     }
-
-    private void OnValidate() => goldText = GetComponent<TMP_Text>();
 }
